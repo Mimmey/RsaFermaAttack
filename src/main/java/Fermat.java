@@ -42,6 +42,16 @@ public class Fermat {
         messages.forEach(System.out::println);
     }
 
+    static class ResultPair {
+        long t;
+        long w;
+
+        public ResultPair(long t, long w) {
+            this.t = t;
+            this.w = w;
+        }
+    }
+
     public static ResultPair findTAndOmega(long N, Long n) throws InterruptedException {
         for (int i = 1; ; i++) {
             n++;
@@ -57,16 +67,6 @@ public class Fermat {
                 System.out.printf("SUCCESS, i = %d\n\n", i);
                 return new ResultPair(n, w);
             }
-        }
-    }
-
-    static class ResultPair {
-        long t;
-        long w;
-
-        public ResultPair(long t, long w) {
-            this.t = t;
-            this.w = w;
         }
     }
 
