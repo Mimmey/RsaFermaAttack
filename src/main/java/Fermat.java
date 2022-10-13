@@ -4,7 +4,7 @@ import java.util.stream.Collectors;
 
 public class Fermat {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         final long N = 99595193774911L;
         final long e = 1908299L;
         final List<Long> C = List.of(
@@ -52,7 +52,7 @@ public class Fermat {
         }
     }
 
-    public static ResultPair findTAndOmega(long N, Long n) throws InterruptedException {
+    public static ResultPair findTAndOmega(long N, Long n) {
         for (int i = 1; ; i++) {
             n++;
 
